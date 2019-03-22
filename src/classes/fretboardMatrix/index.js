@@ -13,9 +13,9 @@ export default class FretboardMatrix {
                 ...notes.slice(notes.indexOf(firstNote)),
                 ...notes.slice(0, notes.indexOf(firstNote)),
             ];
-            console.log(notesOrder)
+            console.log(notesOrder);
             notesOrder = notesOrder.slice(0, -4);
-            console.log(notesOrder)
+            console.log(notesOrder);
             Object.keys(notesOrder).forEach((j) => {
                 const note = {
                     fretId: Number(j),
